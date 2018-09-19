@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-    console.log('Ready');
+    console.log('Ready w/ JQ');
 });
 
 $(document).ready(function() {
