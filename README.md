@@ -1,3 +1,3 @@
 # WebLab
 
-Test GitHub
+Test GitHub Repository
