@@ -10,12 +10,30 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.0/dist/semantic.min.js"></script>
     <script src="init.js"></script>
+    <!-- OTHERS -->
+    <style>
+        del{opacity: 0.5;}
+        #menu { position: relative; z-index: 2}
+        #content { position: absolute; z-index: 1; top: 0; left: 0; width: 100%; height: 100vh;}
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            console.log('Ready w/ JQ');
+        });
+
+        $(document).ready(function() {
+            $('#menu a').on('click', function(e) {
+                e.preventDefault();
+            })
+        });
+    </script>
 </head>
 <body style="background:#000">
-    <div id="menu" class="ui three item menu attached inverted">
+    <div id="menu" class="ui four item menu attached inverted">
         <a class="active item" href="#">One</a>
         <a class="item" href="#">Two</a>
         <a class="item" href="#">Three</a>
+        <a class="item" href="#">Four</a>
     </div>
     <div id="content" class="ui middle aligned column centered grid">
         <div class="row">
@@ -23,27 +41,26 @@
                 <div class="ui raised very padded text container segment inverted">
                     <h2>FRONT</h2>
                     <ul>
-                        <li><a href="https://semantic-ui.com/" target="_blank">Semantic UI</a></li>
+                        <li><del><a href="https://semantic-ui.com/" target="_blank">Semantic UI</a></del></li>
                         <li><a href="https://electronjs.org/" target="_blank">Electron</a> + <a href="https://www.npmjs.com/package/electron-forge" target="_blank">Forge</a></li>
                         <li><a href="https://github.com/mysqljs/mysql" target="_blank">MySQL Interface</a></li>
                         <li><a href="https://vuejs.org/" target="_blank">Vue.js</a></li>
-                        <li><a href="https://github.com/SimulatedGREG/electron-vue" target="_blank">ElectronVue</a></li>
+                        <li><del><a href="https://github.com/SimulatedGREG/electron-vue" target="_blank">ElectronVue</a></del></li>
                         <li><a href="https://stripe.com/fr" target="_blank">Stripe</a></li>
                     </ul>
                     <div class="ui divider"></div>
                     <h2>SERVER</h2>
                     <ul>
-                        <li><a href="https://nodejs.org/en/" target="_blank">Node JS</a></li>
-                        <li><a href="https://expressjs.com/fr/" target="_blank">Express</a></li>
-                        <li><a href="https://socket.io/" target="_blank">Sockets</a></li>
+                        <li><del><a href="https://nodejs.org/en/" target="_blank">Node JS</a> + <a href="https://expressjs.com/fr/" target="_blank">Express</a> + <a href="https://socket.io/" target="_blank">Sockets</a></del></li>
+                        <li><del>Windows : <a href="https://www.npmjs.com/package/forever" target="_blank">Forever</a> + <a href="https://nodemon.io/" target="_blank">Nodemon</a> > <a href="https://stackoverflow.com/questions/16369018/forever-nodemon-running-together" target="_blank">Together</a></del></li>
+                        <li><del>Unix : <a href="https://github.com/Unitech/pm2">Process Manager</a></del></li>
                         <li><a href="#">Tokens</a></li>
-                        <li><a href="https://www.npmjs.com/package/forever" target="_blank">Forever</a></li>
                     </ul>
                     <div class="ui divider"></div>
                     <h2>OTHERS</h2>
                     <ul>
-                        <li><a href="https://electronjs.org/docs/tutorial/debugging-main-process-vscode" target="_blank">F5 Start</a></li>
-                        <li><a href="https://github.com/" target="_blank">GitHub ✔</a></li>
+                        <li><del><a href="https://electronjs.org/docs/tutorial/debugging-main-process-vscode" target="_blank">F5 Start</a></del></li>
+                        <li><del><a href="https://github.com/" target="_blank">GitHub</a></del></li>
                     </ul>
                 </div>
             </div>
