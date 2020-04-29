@@ -1,3 +1,0 @@
-# WebLab
-
-My GitHub Repository
